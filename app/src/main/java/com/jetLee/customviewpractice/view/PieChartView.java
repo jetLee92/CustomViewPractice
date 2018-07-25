@@ -16,7 +16,7 @@ import com.jetLee.customviewpractice.Utils;
  * Author：Jet啟思
  * Time：2018/7/25 1:32
  */
-public class PieChart extends View {
+public class PieChartView extends View {
 
 	Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
@@ -27,11 +27,11 @@ public class PieChart extends View {
 	RectF rectF = new RectF();
 	int offset = Utils.dpToPx(20);
 
-	public PieChart(Context context) {
+	public PieChartView(Context context) {
 		super(context);
 	}
 
-	public PieChart(Context context, @Nullable AttributeSet attrs) {
+	public PieChartView(Context context, @Nullable AttributeSet attrs) {
 		super(context, attrs);
 	}
 

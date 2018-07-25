@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.jetLee.customviewpractice.ui.CircleAvatarActivity;
 import com.jetLee.customviewpractice.ui.DashBoardActivity;
 import com.jetLee.customviewpractice.ui.PieChartActivity;
 
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 	private void initView() {
 		findViewById(R.id.dashBoard).setOnClickListener(this);
 		findViewById(R.id.pieChart).setOnClickListener(this);
+		findViewById(R.id.circleAvatar).setOnClickListener(this);
+		findViewById(R.id.sport).setOnClickListener(this);
 	}
 
 	@Override
@@ -35,6 +38,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 				break;
 			case R.id.pieChart:
 				startActivity(this, PieChartActivity.class);
+				break;
+			case R.id.circleAvatar:
+				startActivity(this, CircleAvatarActivity.class);
+				break;
+			case R.id.sport:
+				startActivity(this, CircleAvatarActivity.class);
 				break;
 			default:
 				break;

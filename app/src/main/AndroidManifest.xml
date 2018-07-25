@@ -18,6 +18,7 @@
 		</activity>
 		<activity android:name=".ui.PieChartActivity"/>
 		<activity android:name=".ui.DashBoardActivity"/>
+		<activity android:name=".ui.CircleAvatarActivity"/>
 	</application>
 
 </manifest>
