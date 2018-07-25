@@ -4,10 +4,33 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical"
 	tools:context="com.jetLee.customviewpractice.MainActivity">
 
-	<com.jetLee.customviewpractice.view.DashBoardView
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"/>
+	<Button
+		android:id="@+id/dashBoard"
+		android:layout_width="100dp"
+		android:layout_height="50dp"
+		android:text="仪表盘"
+		android:layout_marginBottom="40dp"/>
+
+	<Button
+		android:id="@+id/pieChart"
+		android:layout_width="100dp"
+		android:layout_height="50dp"
+		android:text="饼图"
+		android:layout_marginBottom="40dp"/>
+
+	<Button
+		android:text="圆形头像"
+		android:layout_width="100dp"
+		android:layout_height="50dp"
+		android:layout_marginBottom="40dp"/>
+
+	<Button
+		android:text="运动记录"
+		android:layout_width="100dp"
+		android:layout_height="50dp"/>
 
 </LinearLayout>
