@@ -19,6 +19,9 @@
 		<activity android:name=".ui.PieChartActivity"/>
 		<activity android:name=".ui.DashBoardActivity"/>
 		<activity android:name=".ui.CircleAvatarActivity"/>
+		<activity android:name=".ui.SportActivity"/>
+		<activity android:name=".ui.property.PropertyAnimatorActivity"/>
+		<activity android:name=".ui.property.PropertyMainActivity"/>
 	</application>
 
 </manifest>

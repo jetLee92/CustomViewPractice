@@ -9,6 +9,8 @@ import android.view.View;
 import com.jetLee.customviewpractice.ui.CircleAvatarActivity;
 import com.jetLee.customviewpractice.ui.DashBoardActivity;
 import com.jetLee.customviewpractice.ui.PieChartActivity;
+import com.jetLee.customviewpractice.ui.SportActivity;
+import com.jetLee.customviewpractice.ui.property.PropertyMainActivity;
 
 /**
  * @Author：Jet啟思
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		findViewById(R.id.pieChart).setOnClickListener(this);
 		findViewById(R.id.circleAvatar).setOnClickListener(this);
 		findViewById(R.id.sport).setOnClickListener(this);
+		findViewById(R.id.property).setOnClickListener(this);
 	}
 
 	@Override
@@ -43,7 +46,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 				startActivity(this, CircleAvatarActivity.class);
 				break;
 			case R.id.sport:
-				startActivity(this, CircleAvatarActivity.class);
+				startActivity(this, SportActivity.class);
+				break;
+			case R.id.property:
+				startActivity(this, PropertyMainActivity.class);
 				break;
 			default:
 				break;
