@@ -55,7 +55,7 @@ public class PropertyView extends View {
 		paint.setStrokeWidth(STROKE);
 		paint.setColor(Color.parseColor("#2e7d32"));
 		paint.setStrokeCap(Paint.Cap.ROUND);
-		canvas.drawArc(rectF, -90, 360 * progress / 100, false, paint);
+		canvas.drawArc(rectF, -230, 360 * progress / 100, false, paint);
 
 		textPaint.setColor(Color.parseColor("#000000"));
 		textPaint.setTextSize(Utils.dpToPx(80));

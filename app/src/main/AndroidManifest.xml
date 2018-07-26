@@ -22,6 +22,7 @@
 		<activity android:name=".ui.SportActivity"/>
 		<activity android:name=".ui.property.PropertyAnimatorActivity"/>
 		<activity android:name=".ui.property.PropertyMainActivity"/>
+		<activity android:name=".ui.property.TypeEvaluatorActivity"/>
 	</application>
 
 </manifest>

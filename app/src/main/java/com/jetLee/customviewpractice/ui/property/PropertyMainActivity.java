@@ -21,6 +21,7 @@ public class PropertyMainActivity extends AppCompatActivity implements View.OnCl
 		setContentView(R.layout.activity_property_main);
 
 		findViewById(R.id.objectAnimator).setOnClickListener(this);
+		findViewById(R.id.typeEvaluator).setOnClickListener(this);
 	}
 
 	@Override
@@ -28,6 +29,9 @@ public class PropertyMainActivity extends AppCompatActivity implements View.OnCl
 		switch (v.getId()) {
 			case R.id.objectAnimator:
 				startActivity(this, PropertyAnimatorActivity.class);
+				break;
+			case R.id.typeEvaluator:
+				startActivity(this, TypeEvaluatorActivity.class);
 				break;
 			default:
 				break;

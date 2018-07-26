@@ -14,9 +14,9 @@
 		android:text="ObjectAnimator"/>
 
 	<Button
-		android:id="@+id/property"
-		android:layout_width="100dp"
+		android:id="@+id/typeEvaluator"
+		android:layout_width="wrap_content"
 		android:layout_height="50dp"
-		android:text="属性动画"/>
+		android:text="TypeEvaluator"/>
 
 </LinearLayout>
