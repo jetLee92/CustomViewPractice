@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.jetLee.customviewpractice.ui.CanvasMatrixCamera.ClipActivity;
 import com.jetLee.customviewpractice.ui.CircleAvatarActivity;
 import com.jetLee.customviewpractice.ui.DashBoardActivity;
 import com.jetLee.customviewpractice.ui.PieChartActivity;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		findViewById(R.id.circleAvatar).setOnClickListener(this);
 		findViewById(R.id.sport).setOnClickListener(this);
 		findViewById(R.id.property).setOnClickListener(this);
+		findViewById(R.id.clip).setOnClickListener(this);
 	}
 
 	@Override
@@ -50,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 				break;
 			case R.id.property:
 				startActivity(this, PropertyMainActivity.class);
+				break;
+			case R.id.clip:
+				startActivity(this, ClipActivity.class);
 				break;
 			default:
 				break;

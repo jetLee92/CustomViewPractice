@@ -1,6 +1,8 @@
 package com.jetLee.customviewpractice;
 
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.util.TypedValue;
 
 /**
@@ -11,6 +13,22 @@ public class Utils {
 
 	public static int dpToPx(int dp) {
 		return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, Resources.getSystem().getDisplayMetrics());
+	}
+
+	/**
+	 * 调整图片大小
+	 *
+	 * @param size
+	 * @return
+	 */
+	public static Bitmap getBitmap(Resources res, int size) {
+		BitmapFactory.Options options = new BitmapFactory.Options();
+		options.inJustDecodeBounds = true;
+		BitmapFactory.decodeResource(res, R.mipmap.girl3, options);
+		options.inJustDecodeBounds = false;
+		options.inDensity = Math.min(options.outWidth, options.outHeight);
+		options.inTargetDensity = size;
+		return BitmapFactory.decodeResource(res, R.mipmap.girl3, options);
 	}
 
 }

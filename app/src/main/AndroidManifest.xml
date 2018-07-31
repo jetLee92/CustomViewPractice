@@ -23,6 +23,7 @@
 		<activity android:name=".ui.property.PropertyAnimatorActivity"/>
 		<activity android:name=".ui.property.PropertyMainActivity"/>
 		<activity android:name=".ui.property.TypeEvaluatorActivity"/>
+		<activity android:name=".ui.CanvasMatrixCamera.ClipActivity"/>
 	</application>
 
 </manifest>

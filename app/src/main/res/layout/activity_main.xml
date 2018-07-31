@@ -4,41 +4,73 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:gravity="center"
 	android:orientation="vertical"
 	tools:context="com.jetLee.customviewpractice.MainActivity">
 
-	<Button
-		android:id="@+id/dashBoard"
-		android:layout_width="100dp"
-		android:layout_height="50dp"
-		android:layout_marginBottom="40dp"
-		android:text="仪表盘"/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="40dp"
+		android:orientation="horizontal"
+		android:padding="8dp">
 
-	<Button
-		android:id="@+id/pieChart"
-		android:layout_width="100dp"
-		android:layout_height="50dp"
-		android:layout_marginBottom="40dp"
-		android:text="饼图"/>
+		<Button
+			android:id="@+id/dashBoard"
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			android:layout_marginRight="5dp"
+			android:layout_weight="1"
+			android:text="仪表盘"/>
 
-	<Button
-		android:id="@+id/circleAvatar"
-		android:layout_width="100dp"
-		android:layout_height="50dp"
-		android:layout_marginBottom="40dp"
-		android:text="圆形头像"/>
+		<Button
+			android:id="@+id/pieChart"
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			android:layout_marginRight="5dp"
+			android:layout_weight="1"
+			android:text="饼图"/>
 
-	<Button
-		android:id="@+id/sport"
-		android:layout_width="100dp"
-		android:layout_height="50dp"
-		android:text="运动记录"/>
+		<Button
+			android:id="@+id/circleAvatar"
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			android:layout_marginRight="5dp"
+			android:layout_weight="1"
+			android:text="圆形头像"/>
 
-	<Button
-		android:id="@+id/property"
-		android:layout_width="100dp"
-		android:layout_height="50dp"
-		android:text="属性动画"/>
+		<Button
+			android:id="@+id/sport"
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			android:layout_weight="1"
+			android:text="运动记录"/>
+
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="40dp"
+		android:orientation="horizontal"
+		android:padding="8dp">
+
+		<Button
+			android:id="@+id/property"
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			android:layout_marginRight="5dp"
+			android:layout_weight="1"
+			android:text="属性动画"/>
+
+		<Button
+			android:id="@+id/clip"
+			android:layout_width="0dp"
+			android:layout_height="50dp"
+			android:layout_marginRight="5dp"
+			android:layout_weight="1"
+			android:text="裁剪"/>
+
+	</LinearLayout>
 
 </LinearLayout>
