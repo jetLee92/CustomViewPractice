@@ -31,7 +31,9 @@ public class ClipView extends View {
     private RectF rectP = new RectF();
     private Camera camera;
 
+    private float angle = 15;
     private float rightAngle;
+    private float leftAngle;
     private float rotation;
 
     public ClipView(Context context) {
@@ -54,29 +56,35 @@ public class ClipView extends View {
 
         canvas.save();
 
-        canvas.translate(getWidth() / 2, getHeight() / 2);
-        canvas.clipRect(-imageSize, -imageSize, 0, imageSize);
-        canvas.translate(-getWidth() / 2, -getHeight() / 2);
-
-        canvas.drawBitmap(bitmap, (getWidth() - imageSize) / 2, (getHeight() - imageSize) / 2, paint);
-
-        canvas.restore();
-
-
-        canvas.save();
         camera.save();
-//        camera.rotateY(rightAngle);
+        camera.rotateY(leftAngle * angle);
 
         canvas.translate(getWidth() / 2, getHeight() / 2);
-        canvas.rotate(rotation);
-//        camera.applyToCanvas(canvas);
         canvas.rotate(-rotation);
-        canvas.clipRect(0, -imageSize, imageSize, imageSize);
+        camera.applyToCanvas(canvas);
+        canvas.clipRect(0, -imageSize, -imageSize, imageSize);
+        canvas.rotate(rotation);
         canvas.translate(-getWidth() / 2, -getHeight() / 2);
+
         canvas.drawBitmap(bitmap, (getWidth() - imageSize) / 2, (getHeight() - imageSize) / 2, paint);
 
         camera.restore();
         canvas.restore();
+
+//        canvas.save();
+//        camera.save();
+//        camera.rotateY(-rightAngle * angle);
+//
+//        canvas.translate(getWidth() / 2, getHeight() / 2);
+//        canvas.rotate(-rotation);
+//        camera.applyToCanvas(canvas);
+//        canvas.clipRect(0, -imageSize, imageSize, imageSize);
+//        canvas.rotate(rotation);
+//        canvas.translate(-getWidth() / 2, -getHeight() / 2);
+//        canvas.drawBitmap(bitmap, (getWidth() - imageSize) / 2, (getHeight() - imageSize) / 2, paint);
+//
+//        camera.restore();
+//        canvas.restore();
 
     }
 
@@ -100,5 +108,12 @@ public class ClipView extends View {
         invalidate();
     }
 
+    public float getLeftAngle() {
+        return leftAngle;
+    }
 
+    public void setLeftAngle(float leftAngle) {
+        this.leftAngle = leftAngle;
+        invalidate();
+    }
 }
