@@ -41,7 +41,7 @@ public class ClipActivity extends AppCompatActivity {
         objectAnimator3.setDuration(500);
 
         final AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.playSequentially(objectAnimator2, objectAnimator3);
+        animatorSet.playSequentially(objectAnimator, objectAnimator2, objectAnimator3);
         animatorSet.setStartDelay(500);
         animatorSet.start();
 //        animatorSet.addListener(new AnimatorListenerAdapter() {

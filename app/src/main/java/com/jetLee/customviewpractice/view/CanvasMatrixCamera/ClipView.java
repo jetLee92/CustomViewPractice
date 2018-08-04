@@ -71,20 +71,20 @@ public class ClipView extends View {
         camera.restore();
         canvas.restore();
 
-//        canvas.save();
-//        camera.save();
-//        camera.rotateY(-rightAngle * angle);
-//
-//        canvas.translate(getWidth() / 2, getHeight() / 2);
-//        canvas.rotate(-rotation);
-//        camera.applyToCanvas(canvas);
-//        canvas.clipRect(0, -imageSize, imageSize, imageSize);
-//        canvas.rotate(rotation);
-//        canvas.translate(-getWidth() / 2, -getHeight() / 2);
-//        canvas.drawBitmap(bitmap, (getWidth() - imageSize) / 2, (getHeight() - imageSize) / 2, paint);
-//
-//        camera.restore();
-//        canvas.restore();
+        canvas.save();
+        camera.save();
+        camera.rotateY(-rightAngle * angle);
+
+        canvas.translate(getWidth() / 2, getHeight() / 2);
+        canvas.rotate(-rotation);
+        camera.applyToCanvas(canvas);
+        canvas.clipRect(0, -imageSize, imageSize, imageSize);
+        canvas.rotate(rotation);
+        canvas.translate(-getWidth() / 2, -getHeight() / 2);
+        canvas.drawBitmap(bitmap, (getWidth() - imageSize) / 2, (getHeight() - imageSize) / 2, paint);
+
+        camera.restore();
+        canvas.restore();
 
     }
 
