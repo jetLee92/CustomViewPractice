@@ -24,6 +24,7 @@
 		<activity android:name=".ui.property.PropertyMainActivity"/>
 		<activity android:name=".ui.property.TypeEvaluatorActivity"/>
 		<activity android:name=".ui.CanvasMatrixCamera.ClipActivity"/>
-	</application>
+        <activity android:name=".ui.MeasureLayoutActivity" />
+    </application>
 
 </manifest>
