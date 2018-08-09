@@ -2,14 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical">
 
-    <com.jetLee.customviewpractice.ui.CircleView
-        android:layout_width="300dp"
-        android:layout_height="300dp"/>
+    <!--<com.jetLee.customviewpractice.view.measurelayout.CircleView-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="300dp"/>-->
 
-    <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content" />-->
+    <Button
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:text="固定大小的圆形" />
+
+    <Button
+        android:id="@+id/tagLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="tag标签" />
 
 </LinearLayout>

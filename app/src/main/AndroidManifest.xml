@@ -24,7 +24,9 @@
 		<activity android:name=".ui.property.PropertyMainActivity"/>
 		<activity android:name=".ui.property.TypeEvaluatorActivity"/>
 		<activity android:name=".ui.CanvasMatrixCamera.ClipActivity"/>
-        <activity android:name=".ui.MeasureLayoutActivity" />
-    </application>
+        <activity android:name=".ui.measurelayout.MeasureLayoutActivity" />
+		<activity android:name=".ui.measurelayout.FlowTagLayoutActivity" />
+		<activity android:name=".ui.measurelayout.CircleActivity" />
+	</application>
 
 </manifest>

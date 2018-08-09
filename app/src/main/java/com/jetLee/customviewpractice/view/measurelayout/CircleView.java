@@ -1,4 +1,4 @@
-package com.jetLee.customviewpractice.ui;
+package com.jetLee.customviewpractice.view.measurelayout;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -32,14 +32,9 @@ public class CircleView extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        int width = (int) ((PADDING + RADIUS) * 2);
-        int height = (int) ((PADDING + RADIUS) * 2);
-//        int width = MeasureSpec.getSize(widthMeasureSpec);
-//        int height = MeasureSpec.getSize(heightMeasureSpec);
+        int width = PADDING + RADIUS * 2;
+        int height = PADDING + RADIUS * 2;
         setMeasuredDimension(resolveSize(width, widthMeasureSpec), resolveSize(height, heightMeasureSpec));
-
-//        int size = Math.min(width, height);
-//        setMeasuredDimension(size, size);
     }
 
     @Override

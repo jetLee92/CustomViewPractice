@@ -9,7 +9,7 @@ import android.view.View;
 import com.jetLee.customviewpractice.ui.CanvasMatrixCamera.ClipActivity;
 import com.jetLee.customviewpractice.ui.CircleAvatarActivity;
 import com.jetLee.customviewpractice.ui.DashBoardActivity;
-import com.jetLee.customviewpractice.ui.MeasureLayoutActivity;
+import com.jetLee.customviewpractice.ui.measurelayout.MeasureLayoutActivity;
 import com.jetLee.customviewpractice.ui.PieChartActivity;
 import com.jetLee.customviewpractice.ui.SportActivity;
 import com.jetLee.customviewpractice.ui.property.PropertyMainActivity;

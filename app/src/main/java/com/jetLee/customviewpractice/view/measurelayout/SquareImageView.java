@@ -1,4 +1,4 @@
-package com.jetLee.customviewpractice.view;
+package com.jetLee.customviewpractice.view.measurelayout;
 
 import android.content.Context;
 import android.graphics.Canvas;
