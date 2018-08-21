@@ -13,6 +13,7 @@ import com.jetLee.customviewpractice.ui.measurelayout.MeasureLayoutActivity;
 import com.jetLee.customviewpractice.ui.PieChartActivity;
 import com.jetLee.customviewpractice.ui.SportActivity;
 import com.jetLee.customviewpractice.ui.property.PropertyMainActivity;
+import com.jetLee.customviewpractice.ui.touch.Touch1Activity;
 
 /**
  * @Author：Jet啟思
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		findViewById(R.id.property).setOnClickListener(this);
 		findViewById(R.id.clip).setOnClickListener(this);
 		findViewById(R.id.measureAndLayout).setOnClickListener(this);
+		findViewById(R.id.touch).setOnClickListener(this);
 	}
 
 	@Override
@@ -60,6 +62,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 				break;
 			case R.id.measureAndLayout:
 				startActivity(this, MeasureLayoutActivity.class);
+				break;
+			case R.id.touch:
+				startActivity(this, Touch1Activity.class);
 				break;
 			default:
 				break;

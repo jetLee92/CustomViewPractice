@@ -78,6 +78,14 @@
             android:layout_weight="1"
             android:text="测量布局" />
 
+        <Button
+            android:id="@+id/touch"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="多点触摸" />
+
     </LinearLayout>
 
 </LinearLayout>

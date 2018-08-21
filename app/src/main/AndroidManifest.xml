@@ -27,6 +27,7 @@
         <activity android:name=".ui.measurelayout.MeasureLayoutActivity" />
 		<activity android:name=".ui.measurelayout.FlowTagLayoutActivity" />
 		<activity android:name=".ui.measurelayout.CircleActivity" />
+		<activity android:name=".ui.touch.Touch1Activity" />
 	</application>
 
 </manifest>
