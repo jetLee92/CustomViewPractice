@@ -28,6 +28,10 @@
 		<activity android:name=".ui.measurelayout.FlowTagLayoutActivity" />
 		<activity android:name=".ui.measurelayout.CircleActivity" />
 		<activity android:name=".ui.touch.Touch1Activity" />
+		<activity android:name=".ui.touch.TouchMainActivity" />
+		<activity android:name=".ui.touch.PageViewActivity" />
+        <activity android:name=".ui.touch.DragListenerActivity" />
+		<activity android:name=".ui.touch.DragHelperActivity" />
 	</application>
 
 </manifest>

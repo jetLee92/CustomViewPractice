@@ -14,6 +14,7 @@ import com.jetLee.customviewpractice.ui.PieChartActivity;
 import com.jetLee.customviewpractice.ui.SportActivity;
 import com.jetLee.customviewpractice.ui.property.PropertyMainActivity;
 import com.jetLee.customviewpractice.ui.touch.Touch1Activity;
+import com.jetLee.customviewpractice.ui.touch.TouchMainActivity;
 
 /**
  * @Author：Jet啟思
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 				startActivity(this, MeasureLayoutActivity.class);
 				break;
 			case R.id.touch:
-				startActivity(this, Touch1Activity.class);
+				startActivity(this, TouchMainActivity.class);
 				break;
 			default:
 				break;

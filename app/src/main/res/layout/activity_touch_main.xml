@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/multiTouch"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:text="MultiTouch" />
+
+    <Button
+        android:id="@+id/pageView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="PageView" />
+
+    <Button
+        android:id="@+id/dragListener"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="DragListener" />
+
+    <Button
+        android:id="@+id/dragHelper"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="DragHelper" />
+
+</LinearLayout>
